@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Snake Water Gun</h1>
+    <button onclick="game('snake')">🐍Snake</button>
+    <button onclick="game('water')">💦Water</button>
+    <button onclick="game('gun')">🔫gun</button>
+    <h1 id="result"></h1>
+    <script>
+        function game(user){
+            const choices=['snake','water','gun']
+            let computer=choices[Math.floor(Math.random()*3)]
+            let result=''
+            if(user===computer){
+                result=`user chocice ${user} computer
+                choice ${computer} It's draw🙅‍♂️`
+            }
+            else if((user==='snake'&& computer==='water')||
+                     (user==='water'&& computer==='gun')||
+                    (user==='gun'&& computer==='snake')){
+                        result=`you lose😹`
+                    }
+                    else{
+                        result=`You Won🥂`
+                    }
+                    document.getElementById('result').innerText=result
+        }
+    </script>
+</body>
+</html>

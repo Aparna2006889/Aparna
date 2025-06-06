@@ -38,3 +38,54 @@ p:hover{
     top: 1px;
     left: 1px;
 }
+.inline{
+    display:block;
+}
+.flex-container{
+    display: flex;
+    /* flex-direction:column; */
+    background-color:blanchedalmond;
+    border: 2px solid black;
+    padding: 15px;
+    justify-content:space-between;
+    align-items:center;
+    height: 100vh;
+}
+.flex-container div{
+    background-color: brown;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+.one{
+    /* flex-grow: 2; */
+    flex-shrink:0;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+}
+.grid-container{
+    display: grid;
+    grid-template: 50px 50px / 50px 50px;
+    justify-content: center;
+}
+.grid-container div{
+    border: 5px solid black;
+}
+.two{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+@media(max-width:468px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+}   

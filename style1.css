@@ -1,0 +1,31 @@
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    left: 300px;
+}
+li{
+    list-style: none;
+}
+.title{
+    position: relative;
+    left: -200px;
+}
+.dh{
+    display: flex;
+    justify-content: center;
+}
+.flex-container{
+    display: flex;
+    flex-direction:row;
+    padding: 30px;
+    justify-content:space-around;
+    align-items:center;
+}
+.flex-container div{
+    background-color:white;
+    border: 2px solid deepskyblue;
+    height: 100px;
+    width: 100px;
+}
+    
